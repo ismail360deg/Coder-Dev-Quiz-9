@@ -9,7 +9,7 @@ const Quiz = ({ quiz }) => {
     return (
 
 
-        <div className='bg-gray-100  p-6 rounded-lg shadow-lg'>
+        <div className='bg-gray-300  p-6 rounded-lg shadow-lg'>
             <img
                 className='object-cover w-full h-56 mb-6 rounded shadow-lg md:h-64 xl:h-80'
                 src={logo}
@@ -23,7 +23,7 @@ const Quiz = ({ quiz }) => {
                 <button
 
                     type='button'
-                    className='px-16 block w-full mt-4 py-3 rounded-full bg-cyan-200 text-gray-800 hover:bg-cyan-400 font-bold'
+                    className='px-16 block w-full mt-4 py-3 rounded-full bg-cyan-400 text-gray-800 hover:bg-cyan-700 font-bold'
                 >
                     Start Practise
 
