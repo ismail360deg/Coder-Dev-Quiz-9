@@ -22,7 +22,7 @@ const Blog = () => {
 
                         <details className="w-full border rounded-lg">
                             <summary className="px-4 py-6 focus:outline-none focus-visible:ring-violet-400">What is the useref hook?</summary>
-                            <p className="px-4 py-6 pt-0 ml-4 -mt-4 dark:text-gray-400">The useRef Hook allows you to persist values between renders. It can be used to store a mutable value that does not cause a re-render when updated. It can be used to access a DOM element directly.. </p>
+                            <p className="px-4 py-6 pt-0 ml-4 -mt-4 dark:text-gray-400">The useRef Hook allows you to persist values between renders. It can be used to store a mutable value that does not cause a re-render when updated. It can be used to access a DOM element directly. </p>
                         </details>
 
                     </div>

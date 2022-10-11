@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
     return (
-        <footer className='px-4 divide-y  text-gray-800'>
+        <footer className='px-4 divide-y  text-gray-200 bg-gray-700'>
             <div className='container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0'>
                 <div className='lg:w-1/3'>
                     <Link className='flex justify-center space-x-3 lg:justify-start'>
@@ -113,7 +113,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className='py-6 text-sm text-center text-gray-400'>
+            <div className='py-6 text-sm text-center text-gray-200'>
                 © 2022 Coding Dev Quiz Inc. All rights reserved.
             </div>
         </footer>
