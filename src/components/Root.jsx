@@ -1,16 +1,22 @@
-import React from 'react';
+import React, { createContext } from 'react';
 import Header from './Header'
 import Footer from './Footer'
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLoaderData } from 'react-router-dom';
 
-const layouts = () => {
+
+export const QuizContext = createContext([]);
+
+const Root = () => {
+    const quizs = useLoaderData()
+
+
     return (
-        <div>
+        <QuizContext.Provider value={quizs}>
             <Header></Header>
             <Outlet></Outlet>
             <Footer></Footer>
-        </div>
+        </QuizContext.Provider>
     );
 };
 
-export default layouts;
+export default Root;

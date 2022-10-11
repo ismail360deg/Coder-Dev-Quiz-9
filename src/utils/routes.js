@@ -10,13 +10,10 @@ const router = createBrowserRouter([
         path: '/',
         element: <Root></Root>,
         errorElement: <ErrorPage></ErrorPage>,
+        loader: () => fetch('quiztopics.json'),
         children: [
             { path: '/', element: <Home></Home> },
-            {
-                path: '/home',
-                loader: () => fetch('quiztopics.json'),
-                element: <Home></Home>
-            },
+            { path: '/home', element: <Home></Home> },
             { path: '/blog', element: <Blog></Blog> },
         ]
     }
