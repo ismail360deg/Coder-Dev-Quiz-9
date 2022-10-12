@@ -10,3 +10,4 @@ Live Website Link: https://idyllic-bienenstitch-7d151a.netlify.app/
 2.React Router Dom v6.4: Documentation Link -> https://reactrouter.com/en/main/start/overview
 3.Resources & Credits: Tailwind Components -> https://www.mambaui.com/
 4.Other Resources: Hero Icon -> https://heroicons.com/
+5.Toast: https://www.npmjs.com/package/react-toastify

@@ -13,7 +13,6 @@ const QuizDetails = () => {
     }
 
     const handleQuizAns = (e, correctAnswer) => {
-        console.log(e, correctAnswer);
         if (e === correctAnswer) {
             toast.success('Correct Answer!', { autoClose: 500 })
         }
@@ -35,8 +34,8 @@ const QuizDetails = () => {
                             {
                                 d.options.map((e, index) => <li
                                     key={index}
-                                    onClick={() => handleQuizAns(e, d.correctAnswer)}>
-                                    <input type="radio" name='answer' id='a' className='answer cursor-pointer' />
+                                >
+                                    <input onClick={() => handleQuizAns(e, d.correctAnswer)} type="radio" name='answer' id='a' className='answer cursor-pointer' />
                                     <label className='' htmlFor="a" id='a_text'>{e}</label>
                                 </li>)
                             }
