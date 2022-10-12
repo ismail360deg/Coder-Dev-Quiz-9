@@ -1,9 +1,6 @@
 import React from 'react';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 
-
-
-
 const Statistics = () => {
     const data = [
         {
@@ -24,11 +21,8 @@ const Statistics = () => {
         },
     ];
     return (
-
-
-
-        <div>
-            <ResponsiveContainer width={350} height={300}>
+        <div >
+            <ResponsiveContainer className='mt-[200px] md:mt-[200px] sm:mt-[200px]' width={350} height={300}>
                 <BarChart width={500} height={400} data={data}>
                     <Bar dataKey="Quize" fill="#8884d8" />
                     <XAxis dataKey="name" />
@@ -36,17 +30,6 @@ const Statistics = () => {
                     <Tooltip></Tooltip>
                 </BarChart>
             </ResponsiveContainer>
-
-
-
-
-
-
-
-
-
-
-
         </div>
     );
 };

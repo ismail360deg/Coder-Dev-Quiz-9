@@ -9,7 +9,6 @@ const QuizDetails = () => {
     const data = quizTopic?.data?.questions;
 
     const handleAnsIcon = (ans) => {
-        // alert(ans)
         toast.success(ans, 'Correct Answer!', { autoClose: 500 })
     }
 
@@ -48,7 +47,7 @@ const QuizDetails = () => {
             };
             <ToastContainer
                 position="top-center"
-                autoClose={5000}
+                autoClose={500}
                 hideProgressBar={false}
                 newestOnTop={false}
                 closeOnClick
@@ -60,7 +59,6 @@ const QuizDetails = () => {
             />
         </div>
     )
-
 };
 
 export default QuizDetails;

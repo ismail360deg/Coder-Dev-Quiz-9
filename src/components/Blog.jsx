@@ -3,8 +3,6 @@ import React from 'react';
 const Blog = () => {
     return (
         <div>
-
-
             <section className="bg-gray-800 text-gray-100">
                 <div className="container flex flex-col justify-center px-4 py-8 mx-auto md:p-8">
 
@@ -27,8 +25,6 @@ const Blog = () => {
                     </div>
                 </div>
             </section>
-
-
         </div>
     );
 };
