@@ -2,11 +2,16 @@ import React, { useContext } from 'react';
 import Quiz from './Quiz';
 import { QuizContext } from './Root'
 
-import { Link } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import heroImg from "../assets/hero.jpg";
 
 const Home = () => {
     const quizs = useContext(QuizContext)
+
+    // const topic = useLoaderData();
+    // console.log(topic);
+
+
     return (
         <section>
             <div className="bg-gray-200">
@@ -53,6 +58,8 @@ const Home = () => {
                     >
                     </Quiz>
                 ))}
+
+
 
             </div>
         </section>
